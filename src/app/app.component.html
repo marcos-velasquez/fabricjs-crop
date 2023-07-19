@@ -1,0 +1,15 @@
+<main class="flex h-screen w-screen flex-col items-center justify-center">
+  <div class="border border-red-500">
+    <canvas id="canvas" width="600" height="600"></canvas>
+  </div>
+
+  <section>
+    <button
+      (click)="applyCrop()"
+      class="flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-center font-semibold text-white"
+    >
+      Apply Crop
+    </button>
+    <p class="text-xl font-bold">DB click to start crop mode</p>
+  </section>
+</main>

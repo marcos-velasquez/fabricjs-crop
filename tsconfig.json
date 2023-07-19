@@ -1,0 +1,42 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@modules/*": ["./src/app/modules/*"],
+      "@core/*": ["./src/app/core/*"],
+      "@common/*": ["./src/app/common/*"],
+      "@env/*": ["./src/environments/*"],
+      "@api/*": ["./src/app/@api/*"],
+      "@fabric-sdk": ["./src/app/@fabric-sdk/index"],
+      "@fabric-sdk/commands": ["./src/app/@fabric-sdk/commands/index"],
+      "@fabric-sdk/customizer": ["./src/app/@fabric-sdk/customizer/customizer"],
+      "@fabric-sdk/extensions": ["./src/app/@fabric-sdk/extensions/extension"]
+    },
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "lib": ["es2020", "dom"],
+    "types": ["jest"],
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
